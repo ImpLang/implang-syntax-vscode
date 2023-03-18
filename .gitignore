@@ -1,0 +1,5 @@
+# VSIX extension files
+*.vsix
+
+# vscode-test (whatever that is)
+.vscode-test

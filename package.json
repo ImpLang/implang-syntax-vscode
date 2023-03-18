@@ -1,0 +1,30 @@
+{
+  "name": "implang-syntax-vscode",
+  "displayName": "ImpLang syntax highlighting for Visual Studio Code",
+  "publisher": "HXM4Tech",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "Syntax highligting for ImpLang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "implang",
+      "aliases": ["ImpLang", "implang"],
+      "extensions": [".impl",".implang",".imp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "implang",
+      "scopeName": "source.impl",
+      "path": "./syntaxes/implang.tmLanguage.json"
+    }]
+  }
+}
