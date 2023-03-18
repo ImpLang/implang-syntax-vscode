@@ -4,7 +4,7 @@
   "publisher": "HXM4Tech",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ImpLang/implang-syntax-vscode.git"
   },
   "description": "Syntax highligting for ImpLang",
   "version": "0.0.1",
