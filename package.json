@@ -7,7 +7,7 @@
     "url": "https://github.com/ImpLang/implang-syntax-vscode.git"
   },
   "description": "Syntax highligting for ImpLang",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.36.0"
   },
