@@ -3,7 +3,10 @@
 	"name": "ImpLang",
 	"patterns": [
 		{
-			"include": "#comments"
+			"include": "#line-comments"
+		},
+		{
+			"include": "#block-comments"
 		},
 		{
 			"include": "#attributes"
@@ -37,11 +40,20 @@
 		}
 	],
 	"repository": {
-		"comments": {
+		"line-comments": {
 			"patterns": [
 				{
 					"name": "comment.line.implang",
-					"match": "#.*$"
+					"match": "//.*$"
+				}
+			]
+		},
+		"block-comments": {
+			"patterns": [
+				{
+					"name": "comment.block.implang",
+					"begin": "/\\*",
+					"end": "\\*/"
 				}
 			]
 		},
@@ -54,16 +66,20 @@
 			]
 		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.implang",
-				"match": "\\b(if|else|while|break|continue|func|return|var)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.implang",
+					"match": "\\b(if|else|while|break|continue|func|return|var)\\b"
+				}
+			]
 		},
 		"bools-and-nulls": {
-			"patterns": [{
-				"name": "constant.language.implang",
-				"match": "\\b(true|false|null)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "constant.language.implang",
+					"match": "\\b(true|false|null)\\b"
+				}
+			]
 		},   
 		"strings": {
 			"name": "string.quoted.double.implang",
